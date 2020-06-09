@@ -1,0 +1,19 @@
+#new-message-container{
+    display: grid;
+    grid: 40px/40px;
+    align-content: center;
+    grid-area: new-message-container;
+    background: #009688;
+    border-top: 1px solid rgba(0,0,0,0.75);
+    border-radius: 0 0 0 10px;
+    padding: 0 15px;
+}
+#new-message-container a{
+    display: grid;
+    background: #eeeeee;
+    place-content: center center;
+    border-radius: 100%;
+    color: #009688;
+    text-decoration: none;
+    font-size: 3rem;
+}

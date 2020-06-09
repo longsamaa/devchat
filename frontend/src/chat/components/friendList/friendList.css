@@ -1,0 +1,50 @@
+#friend-list{
+    grid-area: friend-list;
+    overflow-y : scroll;
+    background: #009688;
+}
+#friend-list > .friend > img{
+    grid-row: span 2;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.friend{
+    display: grid;
+    grid-template-columns: 40px 1fr max-content;
+    grid-gap: 20px;
+    color : #dddddd;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 20px 20px 20px 15px;
+}
+.friend.active,
+.friend:hover{
+    background: lightgray;
+    color: black;
+    cursor: pointer;
+}
+.title-text{
+    font-weight: bold;
+    color : orange;
+    padding-left: 5px;
+    white-space: nowrap;
+    overflow-x : hidden;
+    text-overflow: ellipsis;
+}
+.created-date{
+    color: black;
+    font-size: 1rem;
+}
+.friend-message{
+    grid-column: span 2;
+    padding-left: 5px;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+::-webkit-scrollbar{
+    display: none;
+
+}
